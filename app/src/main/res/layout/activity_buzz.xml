@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shobhit.multiplayer.Buzz"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/Ques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/Buzz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/scr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30dp" />
+
+            <RadioGroup
+                android:id="@+id/R1"
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Option1L1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Check"
+                    android:text="Option 1"
+                    android:textColor="#FCF3CF" />
+
+                <RadioButton
+                    android:id="@+id/Option2L1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Check"
+                    android:text="Option 2"
+                    android:textColor="#FCF3CF" />
+
+                <RadioButton
+                    android:id="@+id/Option3L1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Check"
+                    android:text="Option 3"
+                    android:textColor="#FCF3CF" />
+
+                <RadioButton
+                    android:id="@+id/Option4L1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Check"
+                    android:text="Option 4"
+                    android:textColor="#FCF3CF" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+
+            android:background="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:id="@+id/L2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/scr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30dp" />
+
+            <RadioGroup
+                android:id="@+id/R2"
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Option1L2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Check"
+                    android:text="Option 1"
+                    android:textColor="#FCF3CF" />
+
+                <RadioButton
+                    android:id="@+id/Option2L2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Check"
+                    android:text="Option 2"
+                    android:textColor="#FCF3CF" />
+
+                <RadioButton
+                    android:id="@+id/Option3L2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Check"
+                    android:text="Option 3"
+                    android:textColor="#FCF3CF" />
+
+                <RadioButton
+                    android:id="@+id/Option4L2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Check"
+                    android:text="Option 4"
+                    android:textColor="#FCF3CF" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
